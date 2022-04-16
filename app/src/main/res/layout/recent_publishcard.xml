@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="358dp"
+    android:layout_height="145dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="12dp"
+    android:layout_margin="12dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/jeeMockTestRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="JEE Mock Test 2021"
+            android:textColor="#191919"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/mathsTextRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Mathematics"
+            android:textColor="#636363"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jeeMockTestRP">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dot1RP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="\u25CF"
+            app:layout_constraintStart_toEndOf="@+id/mathsTextRP"
+            app:layout_constraintTop_toBottomOf="@+id/jeeMockTestRP">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/phyTextRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Physics"
+            android:textColor="#636363"
+            app:layout_constraintStart_toEndOf="@+id/dot1RP"
+            app:layout_constraintTop_toBottomOf="@+id/jeeMockTestRP">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dot2RP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="\u25CF"
+            app:layout_constraintStart_toEndOf="@+id/phyTextRP"
+            app:layout_constraintTop_toBottomOf="@+id/jeeMockTestRP">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/chemTextRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Chemistry"
+            android:textColor="#636363"
+            app:layout_constraintStart_toEndOf="@+id/dot2RP"
+            app:layout_constraintTop_toBottomOf="@+id/jeeMockTestRP">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/forfiveTextRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="45Q"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mathsTextRP">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dot3RP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="\u25CF"
+            app:layout_constraintStart_toEndOf="@+id/forfiveTextRP"
+            app:layout_constraintTop_toBottomOf="@+id/mathsTextRP">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sevminTextRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="60 mins"
+            app:layout_constraintStart_toEndOf="@+id/dot3RP"
+            app:layout_constraintTop_toBottomOf="@+id/mathsTextRP">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dot4RP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="\u25CF"
+            app:layout_constraintStart_toEndOf="@+id/sevminTextRP"
+            app:layout_constraintTop_toBottomOf="@+id/mathsTextRP">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/marksTextRP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="75 marks"
+            app:layout_constraintStart_toEndOf="@+id/dot4RP"
+            app:layout_constraintTop_toBottomOf="@+id/mathsTextRP">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/recentPublishText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="Result published on 12th July,2021"
+            android:textColor="#636363"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sevminTextRP">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="View Result"
+            android:textColor="#1089FF"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@+id/recentPublishText"
+            app:layout_constraintTop_toBottomOf="@+id/dot4RP">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/keybackspcp1"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/dot4RP">
+
+        </ImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

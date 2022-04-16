@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="368dp"
+    android:layout_height="108dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constCardp13"
+            android:layout_width="72dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.47">
+
+            <TextView
+                android:id="@+id/dateTextAVp13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="AUG 15"
+                android:textColor="#594099"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="9 AM"
+                android:id="@+id/timeTextAVp13"
+                android:textColor="#594099"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.589"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateTextAVp13"
+                app:layout_constraintVertical_bias="0.0">
+
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/jeeMockTestAVp13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="All India Mock Test - 10"
+            android:textColor="#191919"
+            app:layout_constraintStart_toEndOf="@id/constCardp13"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/mathsTextAVp13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Mathematics"
+            android:textColor="#636363"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintStart_toEndOf="@id/constCardp13"
+            app:layout_constraintTop_toBottomOf="@+id/jeeMockTestAVp13">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/forfiveTextAVp13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="72Q"
+            app:layout_constraintStart_toEndOf="@id/constCardp13"
+            app:layout_constraintTop_toBottomOf="@+id/mathsTextAVp13">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dot3AVp13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="\u25CF"
+            app:layout_constraintStart_toEndOf="@+id/forfiveTextAVp13"
+            app:layout_constraintTop_toBottomOf="@+id/mathsTextAVp13">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sevminTextAVp13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="90 mins"
+            app:layout_constraintStart_toEndOf="@+id/dot3AVp13"
+            app:layout_constraintTop_toBottomOf="@+id/mathsTextAVp13">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dot4AVp13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="\u25CF"
+            app:layout_constraintStart_toEndOf="@+id/sevminTextAVp13"
+            app:layout_constraintTop_toBottomOf="@+id/mathsTextAVp13">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/marksTextAVp13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="100 marks"
+            app:layout_constraintStart_toEndOf="@+id/dot4AVp13"
+            app:layout_constraintTop_toBottomOf="@+id/mathsTextAVp13">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testmoduledesign">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Test Module Design"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".MainActivityP60"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP59"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP54"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP53"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP49"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP47"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP46"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP43"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP42"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP38"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP35"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP31"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP28"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP20"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP23"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP18"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP13"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP17"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP10"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP9"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityP6"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

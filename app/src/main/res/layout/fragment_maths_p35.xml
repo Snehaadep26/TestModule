@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:id="@+id/linear1LayoutP35"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5p35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/textView20p35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="6"
+                    android:textColor="#191919"
+                    android:textSize="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/downArrowp15p35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/down_arrow"
+                    app:layout_constraintStart_toEndOf="@+id/textView20p35"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/textView101p35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="84dp"
+                    android:text="+ 1.00 | - 0.50"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00 : 44"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.619"
+                    app:layout_constraintStart_toEndOf="@+id/textView101p35"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.761">
+
+                </TextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:layout_margin="12dp"
+                android:background="@color/white"
+                android:id="@+id/const1p35"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5p35">
+
+                <TextView
+                    android:id="@+id/textViewP35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="The set of elements that differ in mutual relationship from those of the other sets is :"
+                    android:textColor="#191919"
+                    android:textSize="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constp35"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="34dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewP35">
+
+
+                    <TextView
+                        android:id="@+id/rorationTextP35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="180dp"
+                        android:fontFamily="@font/roboto"
+                        android:text=" –SO3H and –NH2 "
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/aBorderP35"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/round_border"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/rorationTextP35"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="18dp"
+                        android:layout_height="21dp"
+                        android:text="A"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/aBorderP35"
+                        app:layout_constraintEnd_toEndOf="@+id/aBorderP35"
+                        app:layout_constraintStart_toStartOf="@+id/aBorderP35"
+                        app:layout_constraintTop_toTopOf="@+id/aBorderP35">
+
+                    </TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/const2p35"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constp35">
+
+
+                    <TextView
+                        android:id="@+id/momentTextP35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="180dp"
+                        android:fontFamily="@font/roboto"
+                        android:text=" –SO3H and –NH2"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/bBorderP35"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/round_border"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/momentTextP35"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.25">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/BTextP35"
+                        android:layout_width="18dp"
+                        android:layout_height="21dp"
+                        android:text="B"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/bBorderP35"
+                        app:layout_constraintEnd_toEndOf="@+id/bBorderP35"
+                        app:layout_constraintStart_toStartOf="@+id/bBorderP35"
+                        app:layout_constraintTop_toTopOf="@+id/bBorderP35">
+
+                    </TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/const3p35"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/const2p35">
+
+
+                    <TextView
+                        android:id="@+id/velocityTextP35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="180dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="–SO3H and –NH2 "
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/cBorderP35"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/round_border"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/velocityTextP35"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="18dp"
+                        android:layout_height="21dp"
+                        android:text="C"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/cBorderP35"
+                        app:layout_constraintEnd_toEndOf="@+id/cBorderP35"
+                        app:layout_constraintStart_toStartOf="@+id/cBorderP35"
+                        app:layout_constraintTop_toTopOf="@+id/cBorderP35">
+
+                    </TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3p35"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/const3p35">
+
+
+                    <TextView
+                        android:id="@+id/momentumTextP35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="180dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="–SO3H and –NH2"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/dTextP35"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:background="@drawable/round_border"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/momentumTextP35"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.666">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="18dp"
+                        android:layout_height="21dp"
+                        android:text="A"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/dTextP35"
+                        app:layout_constraintEnd_toEndOf="@+id/dTextP35"
+                        app:layout_constraintStart_toStartOf="@+id/dTextP35"
+                        app:layout_constraintTop_toTopOf="@+id/dTextP35">
+
+                    </TextView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_bar_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="237dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                app:itemTextColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="NotSibling">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button235"
+                        android:layout_width="122dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/custom_button"
+                        android:backgroundTint="#FFC36F"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="MARK AND NEXT"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/buttonp35"
+                        android:layout_width="122dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/custom_button"
+                        android:backgroundTint="#FFFFFF"
+                        android:fontFamily="@font/roboto_bold"
+
+                        android:text="clear response"
+                        android:textColor="#AEAEAE"
+                        android:textSize="12dp"
+                        app:layout_constraintStart_toEndOf="@+id/button235"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </Button>
+
+                    <Button
+                        android:id="@+id/button4p35"
+                        android:layout_width="122dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/custom_button"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="save and next"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.388"
+                        app:layout_constraintStart_toEndOf="@+id/buttonp35"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </Button>
+
+                    <TextView
+                        android:id="@+id/textView104p35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="42dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="PREVIOUS"
+                        android:textColor="#E6E6E6"
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView9p35"
+                        app:layout_constraintTop_toBottomOf="@+id/button235">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/imageView9p35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/halfarrow_back"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button235">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/textView102p35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="196dp"
+                        android:layout_marginTop="42dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="NEXT"
+                        android:textColor="#636363"
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toEndOf="@+id/textView104p35"
+                        app:layout_constraintTop_toBottomOf="@+id/button4p35"
+                        tools:ignore="MissingConstraints">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/halfarrow_forward_ios_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.388"
+                        app:layout_constraintStart_toEndOf="@+id/textView102p35"
+                        app:layout_constraintTop_toBottomOf="@+id/button4p35">
+
+                    </ImageView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>

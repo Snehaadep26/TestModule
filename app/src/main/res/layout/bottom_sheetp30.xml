@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bottomsheetp18"
+    android:id="@+id/sharep30"
+    android:layout_margin="12dp"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/imageViewp30"
+            android:layout_width="74dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:background="@drawable/ic_horizontal_rule"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/attemptBoderp30"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/attemptedback"
+            app:layout_constraintBottom_toBottomOf="@+id/attemptTextp30"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewp30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/attemptTextp30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Attempted"
+            app:layout_constraintStart_toEndOf="@+id/attemptBoderp30"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewp30">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/unattemptBorderp30"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="18dp"
+            android:background="@drawable/unattemptedback"
+            app:layout_constraintBottom_toBottomOf="@+id/attemptBoderp30"
+            app:layout_constraintStart_toEndOf="@+id/attemptTextp30"
+            app:layout_constraintTop_toTopOf="@+id/attemptTextp30"
+            app:layout_constraintVertical_bias="1.0">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/unattemptTextp30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Unattempted"
+            app:layout_constraintBottom_toBottomOf="@+id/attemptTextp30"
+            app:layout_constraintStart_toEndOf="@+id/unattemptBorderp30"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewp30"
+            app:layout_constraintVertical_bias="1.0">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/unseenBoder"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/unseenback"
+            app:layout_constraintBottom_toBottomOf="@+id/unattemptBorderp30"
+            app:layout_constraintStart_toEndOf="@+id/unattemptTextp30"
+            app:layout_constraintTop_toTopOf="@+id/unattemptBorderp30"
+            app:layout_constraintVertical_bias="0.75">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unseen"
+            app:layout_constraintBottom_toBottomOf="@+id/unattemptTextp30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.186"
+            app:layout_constraintStart_toEndOf="@+id/unseenBoder"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewp30"
+            app:layout_constraintVertical_bias="1.0">
+
+        </TextView>
+        <TextView
+            android:id="@+id/attemptMarkBoderp30"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/attemptedback"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/attemptBoderp30">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/yellowcircle"
+            app:layout_constraintEnd_toStartOf="@+id/attnmarkRP30"
+            app:layout_constraintTop_toBottomOf="@+id/attemptBoderp30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/unattnmarkRP30"
+            android:layout_width="120dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Unattempted and Marked for Review"
+            app:layout_constraintStart_toEndOf="@+id/unattemptMarkBoderp30"
+            app:layout_constraintTop_toBottomOf="@id/unattemptTextp30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/unattemptMarkBoderp30"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/unattemptedback"
+            app:layout_constraintStart_toEndOf="@id/attnmarkRP30"
+            app:layout_constraintTop_toBottomOf="@+id/unattemptTextp30">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/yelloCircle30"
+            android:background="@drawable/yellowcircle"
+            app:layout_constraintEnd_toStartOf="@+id/unattnmarkRP30"
+            app:layout_constraintTop_toBottomOf="@+id/unattemptBorderp30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/attnmarkRP30"
+            android:layout_width="120dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Attempted and Marked for Review"
+            app:layout_constraintStart_toEndOf="@+id/attemptMarkBoderp30"
+            app:layout_constraintTop_toBottomOf="@id/attemptTextp30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/allQsnTextp30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="ALL QUESTIONS"
+            android:textColor="#AEAEAE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.092"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/attnmarkRP30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/oneBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/allQsnTextp30">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/onep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/oneBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/oneBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/oneBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/oneBorderP30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/twoBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/oneBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/allQsnTextp30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/twop30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/twoBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/twoBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/twoBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/twoBorderP30">
+
+        </TextView>
+
+
+
+        <TextView
+            android:id="@+id/threeBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/twoBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/allQsnTextp30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/threep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/threeBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/threeBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/threeBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/threeBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/fourBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/threeBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/allQsnTextp30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/fourp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/fourBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/fourBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/fourBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/fourBorderP30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/fiveBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/fourBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/allQsnTextp30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/fivep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/fiveBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/fiveBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/fiveBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/fiveBorderP30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sixBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/fiveBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/allQsnTextp30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/sixp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/sixBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/sixBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/sixBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/sixBorderP30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/SeveBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oneBorderP30">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:id="@+id/sevep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/SeveBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/SeveBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/SeveBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/SeveBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/eighBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/SeveBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/oneBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:id="@+id/eighp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/eighBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/eighBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/eighBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/eighBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/nineBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/eighBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/oneBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:id="@+id/ninep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/nineBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/nineBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/nineBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/nineBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tenBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/nineBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/oneBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:id="@+id/tenp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tenBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/tenBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/tenBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/tenBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/eleBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/tenBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/oneBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:id="@+id/elep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/eleBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/eleBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/eleBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/eleBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tweleBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/eleBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/oneBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:id="@+id/twelep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tweleBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/tweleBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/tweleBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/tweleBorderP30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/thirBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SeveBorderP30">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13"
+            android:id="@+id/thirp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/thirBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/thirBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/thirBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/thirBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/fortBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/thirBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/SeveBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14"
+            android:id="@+id/fortp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/fortBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/fortBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/fortBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/fortBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/fiftBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/fortBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/SeveBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:id="@+id/fiftp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/fiftBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/fiftBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/fiftBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/fiftBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/sixteBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/fiftBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/SeveBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16"
+            android:id="@+id/sixtep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/sixteBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/sixteBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/sixteBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/sixteBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/sevnteBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/sixteBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/SeveBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17"
+            android:id="@+id/sevntep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/sevnteBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/sevnteBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/sevnteBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/sevnteBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/eigtenBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/sevnteBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/SeveBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18"
+            android:id="@+id/eigtenp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/eigtenBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/eigtenBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/eigtenBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/eigtenBorderP30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/nintBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thirBorderP30">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/nintp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/nintBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/nintBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/nintBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/nintBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/twentBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/nintBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/thirBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:id="@+id/twentp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/twentBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/twentBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/twentBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/twentBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/twoneBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/twentBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/thirBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21"
+            android:id="@+id/twonep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/twoneBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/twoneBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/twoneBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/twoneBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/twtwoBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/twoneBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/thirBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22"
+            android:id="@+id/twtwop30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/twtwoBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/twtwoBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/twtwoBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/twtwoBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/twthreeBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/twtwoBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/thirBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23"
+            android:id="@+id/twthreep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/twthreeBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/twthreeBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/twthreeBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/twthreeBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/twforBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/twthreeBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/thirBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24"
+            android:id="@+id/twfor30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/twforBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/twforBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/twforBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/twforBorderP30">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/twfiveBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nintBorderP30">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:id="@+id/twfivep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/twfiveBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/twfiveBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/twfiveBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/twfiveBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/twsixBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/twfiveBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/nintBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26"
+            android:id="@+id/twsixp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/twsixBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/twsixBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/twsixBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/twsixBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/twseveBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/twsixBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/nintBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27"
+            android:id="@+id/twsevep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/twseveBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/twseveBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/twseveBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/twseveBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tweighBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/twseveBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/nintBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28"
+            android:id="@+id/tweighp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/tweighBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/tweighBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/tweighBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/tweighBorderP30">
+
+        </TextView>
+        <TextView
+            android:id="@+id/twnineBorderP30"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_border"
+            app:layout_constraintStart_toEndOf="@id/tweighBorderP30"
+            app:layout_constraintTop_toBottomOf="@+id/nintBorderP30">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29"
+            android:id="@+id/twninep30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/twnineBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/twnineBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/twnineBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/twnineBorderP30">
+
+        </TextView><TextView
+        android:id="@+id/thirtyBorderP30"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_border"
+        app:layout_constraintStart_toEndOf="@id/twnineBorderP30"
+        app:layout_constraintTop_toBottomOf="@+id/nintBorderP30">
+
+    </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:id="@+id/thirtyp30"
+            android:textColor="#636363"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/thirtyBorderP30"
+            app:layout_constraintEnd_toEndOf="@+id/thirtyBorderP30"
+            app:layout_constraintStart_toStartOf="@+id/thirtyBorderP30"
+            app:layout_constraintTop_toTopOf="@+id/thirtyBorderP30">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="390dp"
+            android:layout_height="42dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="658dp"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

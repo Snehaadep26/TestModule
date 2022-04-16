@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bar.xml"
+    app:startDestination="@id/testFragment">
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.testmoduledesign.Fragments.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <fragment
+        android:id="@+id/assignmentFragment"
+        android:name="com.example.testmoduledesign.Fragments.AssignmentFragment"
+        android:label="fragment_assignment"
+        tools:layout="@layout/fragment_assignment" />
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.testmoduledesign.Fragments.TestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" >
+        <action
+            android:id="@+id/bottom_sheet"
+            app:destination="@id/fragment_bottom_sheet"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" >
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_bottom_sheet"
+        android:name="com.example.testmoduledesign.Fragments.BottomSheetDialogFragment"
+        android:label="fragmentbottom"
+        tools:layout="@layout/fragment_bottom_sheet">
+        <action
+            android:id="@+id/bottom_sheet_cal"
+            app:destination="@id/fragment_bottom_sheet_calender"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right">
+
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_bottom_sheet_calender"
+        android:name="com.example.testmoduledesign.BottomSheetCalender"
+        android:label="fragmentbottomcalender"
+        tools:layout="@layout/bottom_sheet_calender">
+
+    </fragment>
+    <fragment
+        android:id="@+id/digitalLibrFragment"
+        android:name="com.example.testmoduledesign.Fragments.DigitalLibrFragment"
+        android:label="fragment_digital_libr"
+        tools:layout="@layout/fragment_digital_libr" />
+    <fragment
+        android:id="@+id/moreFragment3"
+        android:name="com.example.testmoduledesign.Fragments.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" />
+</navigation>

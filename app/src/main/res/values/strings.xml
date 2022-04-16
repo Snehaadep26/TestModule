@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Test_Module</string>
+
+    <string-array name="Days">
+        <item>All time</item>
+        <item>This Week</item>
+        <item>This month</item>
+        <item>This year</item>
+        <item>customize data range</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
